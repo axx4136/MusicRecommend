@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>登录页</title>
+
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+
+  <meta name="author" content="Vincent Garreau" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- 引入bootstrap框架 js-->
+
+  <script src="../script/jquery-3.3.1.min.js"></script>
+
+      <script src="../script/api.js"></script>
+
+        <script src="../script/ulogin.js"></script>
+
+  <!-- 引入bootstrap框架 css-->
+
+  <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <link rel="stylesheet" media="screen" href="../css/jstyle.css">
+
+</head>
+
+<body>
+
+<div id="particles-js" style="background-image:../image/bg.jpg">
+
+<!-- 表单 -->
+
+<!-- 插入 -->
+
+  <div id="form">
+
+<table id="tab">
+
+  <tr><td>登录</td></tr>
+
+<tr><td><img src="../res/img/yhm.png"  class="icon"/> <input type="text"  id="user" placeholder="请输入用户名"></td></tr>
+
+<tr><td><img src="../res/img/mm.png" class="icon"/> <input type="password"  id="pass"  placeholder=""></td></tr>
+
+<tr><td rowspan="2"><input type="button" class="button" value="进入运筹app" onclick="los(user.value,pass.value)"></td></tr>
+
+</table>
+
+<span class="others"><a href="regeit.html">注册</a></span><span class="others"><a href="forgetpass.html">忘记密码</a></span>
+
+<span class="others">微信登录</span><span class="others">qq登录</span>
+
+  </div>
+
+   <!-- 表单结束-->
+
+<!-- scripts -->
+
+<script src="../script/particles.min.js"></script>
+
+<script src="../script/app.js"></script>
+
+</body>
+
+</html>
