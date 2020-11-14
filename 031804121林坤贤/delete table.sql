@@ -1,1 +1,0 @@
-call new_student(031804121)
