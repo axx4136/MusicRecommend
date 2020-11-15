@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.83"
+        android:textSize="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/distance_dw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/distance"
+        android:text="公里"
+        android:textSize="22dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/speed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/distance"
+        android:background="@drawable/speed"/>
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/distance"
+        android:layout_toRightOf="@+id/speed"
+        android:background="@drawable/time"/>
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/distance"
+        android:layout_toRightOf="@+id/time"
+        android:background="@drawable/heart"/>
+
+    <TextView
+        android:id="@+id/speed_c"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="配速"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/speed"/>
+
+    <TextView
+        android:id="@+id/speed_num"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="5m/s"
+        android:textSize="20dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@+id/speed_c"/>
+
+    <TextView
+        android:id="@+id/time_c"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="配速"
+        android:textSize="20dp"
+        android:layout_marginLeft="175dp"
+        android:layout_below="@+id/speed"/>
+
+    <TextView
+        android:id="@+id/time_num"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="00:08:23"
+        android:textSize="20dp"
+        android:layout_marginLeft="157dp"
+        android:layout_below="@+id/speed_c"/>
+
+    <TextView
+        android:id="@+id/heart_c"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="心率"
+        android:textSize="20dp"
+        android:layout_marginLeft="323dp"
+        android:layout_below="@+id/speed"/>
+
+    <TextView
+        android:id="@+id/heart_num"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="72bpm"
+        android:textSize="20dp"
+        android:layout_marginLeft="312dp"
+        android:layout_below="@+id/speed_c"/>
+
+    <Button
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speed_num"
+        android:background="@drawable/button_shape3"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:text="选择歌单"/>
+
+    <Button
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playlist"
+        android:text="当前播放:麻雀-李荣浩"
+        android:textSize="18dp"
+        />
+
+    <ImageButton
+        android:id="@+id/pre"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/previous"
+        android:layout_below="@id/s1"
+        android:layout_marginLeft="85dp"/>
+
+    <ImageButton
+        android:id="@+id/stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/stop"
+        android:layout_below="@id/s1"
+        android:layout_toRightOf="@id/pre"
+        android:layout_marginLeft="40dp"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/next"
+        android:layout_below="@id/s1"
+        android:layout_toRightOf="@id/stop"
+        android:layout_marginLeft="40dp"/>
+
+
+    <Button
+        android:id="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop"
+        android:background="@drawable/button_shape2"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:text="暂停" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop"
+        android:layout_toRightOf="@+id/s2"
+        android:background="@drawable/button_shape2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:text="结束运动" />
+
+</RelativeLayout>
+
