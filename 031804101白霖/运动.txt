@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape3"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:text="选择歌单"/>
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlist"
+        android:textSize="20dp"
+        android:textColor="#FFE40A24"
+        android:text="猜你喜欢"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/like">
+        <ImageButton
+        android:id="@+id/playlist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/playlist1"
+        android:layout_weight="1"
+        />
+        
+        
+        <ImageButton
+            android:id="@+id/playlist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/playlist1"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/playlist3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/playlist1"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playlist"
+        android:layout_marginTop="170dp">
+        <ImageButton
+            android:id="@+id/playlist4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/playlist1"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/playlist5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/playlist1"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/playlist6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/playlist1"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_shape2"
+        android:text="开始运动" />
+</RelativeLayout>
